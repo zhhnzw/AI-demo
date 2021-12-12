@@ -79,8 +79,6 @@ cnn=CNN()
 optimizer = torch.optim.Adam(cnn.parameters(), lr=LR)
 loss_func = nn.CrossEntropyLoss()
 
-print(train_loader, enumerate(train_loader))
-
 # 训练
 for epoch in range(EPOCH):
     for step, (x, y) in enumerate(train_loader):
