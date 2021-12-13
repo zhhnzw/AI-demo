@@ -36,6 +36,7 @@ test_dataset = datasets.MNIST(
 test_x = Variable(torch.unsqueeze(test_dataset.data, dim=1)).type(torch.FloatTensor)[:2000]/255.
 test_y = test_dataset.targets[:2000]
 
+
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
